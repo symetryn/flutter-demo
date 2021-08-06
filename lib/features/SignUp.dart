@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -54,7 +55,7 @@ class _SignUpState extends State<SignUp> {
                     top: 20, left: 8, right: 8, bottom: 0),
                 child: InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, "/login");
+                    AutoRouter.of(context).pushNamed("/login");
                   },
                   child: Container(
                     height: 50,
@@ -67,7 +68,7 @@ class _SignUpState extends State<SignUp> {
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 0),
                 child: InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, "/login");
+                    AutoRouter.of(context).pushNamed("/login");
                   },
                   child: Container(
                     height: 50,

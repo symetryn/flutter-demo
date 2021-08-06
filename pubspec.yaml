@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: "^1.4.0"
+  firebase_auth: "^3.0.1"
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -30,10 +32,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   auto_route: ^2.2.0
   google_fonts: ^2.1.0
+  google_sign_in: ^5.0.7
 
 dev_dependencies:
   auto_route_generator: ^2.1.0
   build_runner: ^2.1.0
+ 
   flutter_test:
     sdk: flutter
 
@@ -52,6 +56,7 @@ flutter:
   assets:
     - assets/images/background.jpeg
     - assets/images/background.png
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

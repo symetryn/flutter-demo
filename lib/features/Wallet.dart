@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,7 +17,7 @@ class _WalletState extends State<Wallet> {
         elevation: 0,
         leading: IconButton(
           onPressed: () {
-            Navigator.pushNamed(context, "/");
+            AutoRouter.of(context).pushNamed("/Home");
           },
           icon: Icon(
             Icons.arrow_back_ios_new_rounded,
@@ -232,7 +233,6 @@ class _WalletState extends State<Wallet> {
                   ],
                 ),
               ),
-              
             ],
           ),
         ),
